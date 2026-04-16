@@ -23,34 +23,42 @@ public class main {
 
         switch (numero){
             case 1:
-                System.out.printf("Seu saldo na CONTA CORRENTE é de: R$ %f \n", contaCorrente.getSaldo());
-                System.out.printf("Seu saldo na CONTA POUPANÇA é de: R$ %f \n", contaPoupanca.getSaldo());
+                System.out.printf("Seu saldo na CONTA CORRENTE é de: R$ %.2f \n", contaCorrente.getSaldo());
+                System.out.printf("Seu saldo na CONTA POUPANÇA é de: R$ %.2f \n", contaPoupanca.getSaldo());
+                System.out.printf("O rendimento da sua conta poupança é de R$ %.2f \n", contaPoupanca.calcularRendimento());
+
             break;
             case 2:
                 System.out.println("Digite o valor que deseja depositar na CONTA CORRENTE: ");
                 double depositoContaCorrente = sc.nextDouble();
-                contaCorrente.fazerDeposito(depositoContaCorrente);
+                contaCorrente.depositar(depositoContaCorrente);
+                sc.nextLine();
                 System.out.println("Digite o valor que deseja depositar na CONTA POUPANÇA: ");
                 double depositoContaPoupanca = sc.nextDouble();
                 contaPoupanca.depositar(depositoContaPoupanca);
-                System.out.printf("Seu novo saldo na CONTA CORRENTE é de: R$ %f \n" , contaCorrente.getSaldo());
-                System.out.printf("Seu novo saldo na CONTA POUPANCA é de: R$ %f \n", contaPoupanca.getSaldo());
+                sc.nextLine();
+
+                System.out.printf("Seu saldo na CONTA CORRENTE é de: R$ %.2f \n" , contaCorrente.getSaldo());
+                System.out.printf("Seu saldo na CONTA POUPANCA é de: R$ %.2f \n", contaPoupanca.getSaldo());
 
                 break;
             case 3:
                 System.out.println("Digite quanto você quer sacar.");
                 double saqueContaC = sc.nextDouble();
                 contaCorrente.sacar(saqueContaC);
-                System.out.printf("Seu novo saldo é: R$ %f \n", contaCorrente.getSaldo());
+                sc.nextLine();
+                System.out.printf("Seu saldo é: R$ %.2f. Taxa de saque: R$ %.2f \n", contaCorrente.getSaldo(), contaCorrente.taxa);
                 break;
             case 4:
                 System.out.println("Digite quanto você quer sacar.");
                 double saqueContaP = sc.nextDouble();
                 contaPoupanca.sacar(saqueContaP);
-                System.out.printf("Seu novo saldo é: R$ %f \n", contaPoupanca.getSaldo());
+                sc.nextLine();
+                System.out.printf("Seu saldo é: R$ %.2f \n", contaPoupanca.getSaldo());
                 break;
             case 0:
                 rodar = false;
+                break;
             default:
                 System.out.println("Valor inválido.");
         }

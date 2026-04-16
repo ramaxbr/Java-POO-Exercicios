@@ -1,36 +1,32 @@
 public class ContaCorrente extends Conta {
-    public double saque;
-    double saldo = getSaldo();
-
+    double taxa = 2;
     public double depositar(double deposito){
-        setSaldo(deposito);
-        return 0;
+        setSaldo(getSaldo() + deposito);
+        return getSaldo();
     }
 
-    public double setSaldo(double quantidade){
-        saldo = quantidade;
-        return 0;
-    }
-    @Override
     public double sacar(double quantidade) {
-        int taxa = 2;
-        if(getSaldo() <= quantidade) {
-           saque = taxa - (getSaldo() - quantidade);
+        if(getSaldo() >= quantidade) {
+           double novoSaldo = (getSaldo() - quantidade) - taxa;
+           setSaldo(novoSaldo);
+        }else{
+            System.out.println("Saldo insuficiente.");
         }
-        return setSaldo(saque);
+        return  getSaldo();
     }
 
     @Override
     public double calcularRendimento() {
         return 0;
     }
-//    public double consultarSaldo(){
+
+    //    public double consultarSaldo(){
 //        return getSaldo();
 //}
 
-double fazerDeposito(double valor){
-        super.depositar(valor);
-        return 0;
-}
+//double fazerDeposito(double valor){
+//        super.depositar(valor);
+//        return 0;
+//}
 
 }
