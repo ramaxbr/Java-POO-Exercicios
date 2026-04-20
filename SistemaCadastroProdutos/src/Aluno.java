@@ -20,7 +20,7 @@ public class Aluno extends Pessoa{
 
     @Override
     public String apresentar(){
-        return "Sou o aluno " + getNome() + " tenho " + getIdade() + "anos, " + "matrícula: "+ getMatricula();
+        return "Sou o aluno " + getNome() + ", tenho " + getIdade() + " anos, " + "e minha matrícula é: "+ getMatricula() + ".";
     }
 
 

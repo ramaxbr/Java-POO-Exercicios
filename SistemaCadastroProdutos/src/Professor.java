@@ -16,7 +16,7 @@ public class Professor extends Pessoa {
 
     @Override
     public String apresentar(){
-        return "Sou o professor " + getNome() + "tenho " + getIdade() + "anos " + "e leciono " + getDisciplina();
+        return "Sou o professor " + getNome() + ", tenho " + getIdade() + " anos " + "e realizo a disciplina: " + getDisciplina() + ".";
     }
 
 
