@@ -3,12 +3,16 @@ public class Alimento extends Produto{
         super(nome, preco, categoria);
     }
 
+    double desconto = 2;
     @Override
     public double calcularDesconto(){
-        double desconto = 5;
         double calcularDesconto = getPreco() * desconto / 100;
         double total = getPreco() - calcularDesconto;
         return total;
     }
 
+    @Override
+    public String exibirProduto(){
+        return "Alimento: " + getNome() + "\n" + "Categoria: " + getCategoria() + "\n" + "Preço original: R$ " + getPreco() + "\n" + "Desconto de: " + desconto + "%" + "\n" + "Preço com desconto: R$ " + calcularDesconto();
+    }
 }

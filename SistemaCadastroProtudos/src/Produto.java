@@ -4,36 +4,34 @@ public abstract class Produto {
     private String categoria;
 
     public Produto(String nome, double preco, String categoria){
-        this.nome= nome;
-        this.preco = preco;
-        this.categoria = categoria;
+        setNome(nome);
+        setPreco(preco);
+        setCategoria(categoria);
     }
 
     public abstract double calcularDesconto();
+    public abstract String exibirProduto();
 
     //Setters
     public void setNome(String nome) {
-        if (toString() == null || toString().isEmpty()) {
-            System.out.println("O nome não pode ser vazio!");
-        } else {
-            this.nome = nome;
+        if (nome == null || nome.isEmpty()) {
+            throw new IllegalArgumentException("O nome não pode ser vázio!");
         }
+        this.nome = nome;
     }
 
     public void setPreco(double preco){
         if(preco <= 0){
-            System.out.println("O preço não pode ser 0!");
-        }else {
-            this.preco = preco;
+            throw new IllegalArgumentException("O preço não pode ser 0!");
         }
+            this.preco = preco;
     }
 
     public void setCategoria(String categoria){
-        if (toString() == null || toString().isEmpty()){
-            System.out.println("Categoria não pode ser vazia!");
-        }else{
-            this.categoria = categoria;
+        if (categoria == null || categoria.isEmpty()){
+           throw new IllegalArgumentException("A categoria não pode ser vázia!");
         }
+        this.categoria = categoria;
     }
 
     //Getters
@@ -48,5 +46,4 @@ public abstract class Produto {
     public String getCategoria(){
         return categoria;
     }
-
 }
