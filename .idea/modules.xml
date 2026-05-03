@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ContaBancaria/ContaBancaria.iml" filepath="$PROJECT_DIR$/ContaBancaria/ContaBancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HierarquiaPessoa/HierarquiaPessoa.iml" filepath="$PROJECT_DIR$/HierarquiaPessoa/HierarquiaPessoa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-POO-Exercicios.iml" filepath="$PROJECT_DIR$/.idea/Java-POO-Exercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/MarcacaoDePonto/MarcacaoDePonto.iml" filepath="$PROJECT_DIR$/MarcacaoDePonto/MarcacaoDePonto.iml" />
       <module fileurl="file://$PROJECT_DIR$/SistemaBancario/SistemaBancario.iml" filepath="$PROJECT_DIR$/SistemaBancario/SistemaBancario.iml" />
