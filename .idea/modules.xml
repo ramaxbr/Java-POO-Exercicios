@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/SistemaBancario/SistemaBancario.iml" filepath="$PROJECT_DIR$/SistemaBancario/SistemaBancario.iml" />
       <module fileurl="file://$PROJECT_DIR$/SistemaCadastroProtudos/SistemaCadastroProtudos.iml" filepath="$PROJECT_DIR$/SistemaCadastroProtudos/SistemaCadastroProtudos.iml" />
       <module fileurl="file://$PROJECT_DIR$/SistemaEscolar/SistemaEscolar.iml" filepath="$PROJECT_DIR$/SistemaEscolar/SistemaEscolar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SistemaPagamento/SistemaPagamento.iml" filepath="$PROJECT_DIR$/SistemaPagamento/SistemaPagamento.iml" />
       <module fileurl="file://$PROJECT_DIR$/SistemaPessoa/SistemaPessoa.iml" filepath="$PROJECT_DIR$/SistemaPessoa/SistemaPessoa.iml" />
       <module fileurl="file://$PROJECT_DIR$/SistemaVeiculo/SistemaVeiculo.iml" filepath="$PROJECT_DIR$/SistemaVeiculo/SistemaVeiculo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SistemaCadastroProtudos/src/src.iml" filepath="$PROJECT_DIR$/SistemaCadastroProtudos/src/src.iml" />
